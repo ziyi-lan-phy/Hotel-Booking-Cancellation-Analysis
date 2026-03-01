@@ -31,7 +31,7 @@ hotel-booking-cancellation-analysis/
 ```
 ---
 
-## 🛠 Data Pre-processing & Feature Engineering (`preprocess_feature.ipynb`)
+## 🛠 Data Pre-processing & Feature Engineering [`preprocess_feature.ipynb`](notebooks/preprocess_feature.ipynb)
 
 The dataset consists of **119,390 rows and 17 columns**. Below are the first few rows for reference:
 
@@ -78,7 +78,7 @@ The dataset consists of **119,390 rows and 17 columns**. Below are the first few
 
 ---
 
-### 1. Total Guests (`total_guests.ipynb`)
+### 1. Total Guests [`total_guests.ipynb`](notebooks/total_guest.ipynb)
 ![total_guests](figures/guests_comparison.png)
 > **Note:** The three plots (A, B, C) correspond to these steps.  
 
@@ -117,7 +117,7 @@ Assigned Room Type: D
 
 ---
 
-### 2. Total Nights (`total_nights.ipynb`)
+### 2. Total Nights [`total_nights.ipynb`](notebooks/total_nights.ipynb)
 ![total_nights](figures/nights_comparison.png)
 
 #### (A) Distribution & Survival Analysis
@@ -159,7 +159,7 @@ df_filtered_0 = df_clean[
 ```
 ---
 
-### 1. Lead Time (Days) (`lead_time.ipynb`)
+### 1. Lead Time (Days) [`lead_time.ipynb`](notebooks/lead_time.ipynb)
 
 #### (A) Bubble Plot Visualization
 ![lead_time](figures/leadtime_cancel.png)
@@ -180,7 +180,7 @@ df_filtered_0 = df_clean[
 
 ---
 
-### 2. Lead Time Regression: Training & Validation (`regression.ipynb`)
+### 2. Lead Time Regression: Training & Validation [`regression.ipynb`](notebooks/regression.ipynb)
 - **Goal**: Map Lead Time → Cancellation Probability.
 - **Data Filtering**: Adults ≤ 4, Children ≤ 3, Total nights ≤ 11 (covers 98% of bookings).
 - **Cut-off**: Used Day 199 (90% cumulative bookings) to exclude long-tail noise; minimum bookings per day ≤199 = 93.
